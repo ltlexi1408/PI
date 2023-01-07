@@ -5,6 +5,7 @@ Led::Led(){
 
 Led::Led(int gpio){
     this->gpio = gpio;
+    gpioInitialise();
     gpioSetMode(this->gpio, PI_OUTPUT);
     off();
 }
